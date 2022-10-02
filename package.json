@@ -1,0 +1,23 @@
+{
+  "name": "the-gym-client-first-template-clone",
+  "version": "1.0.0",
+  "description": "The project uses Tailwind CSS and introduces BEM methodology for custom CSS classes that are not readily available in Tailwind CSS.",
+  "main": "index.js",
+  "scripts": {
+    "build-styles": "npx tailwindcss -i ./src/styles.css -o ./public/styles.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alain-kubwayo/the-gym-client-first-template-clone.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alain-kubwayo/the-gym-client-first-template-clone/issues"
+  },
+  "homepage": "https://github.com/alain-kubwayo/the-gym-client-first-template-clone#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.1.8"
+  }
+}

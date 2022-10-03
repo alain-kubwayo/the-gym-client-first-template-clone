@@ -125,11 +125,11 @@
     @apply bg-gradient-to-t from-green-100 via-blue-100;
 }
 
-.leading{
+.principal{
     @apply space-y-4;
 }
 
-.leading--y-centered{
+.principal--y-centered{
     @apply flex flex-col items-start justify-center;
 }
 

@@ -943,13 +943,13 @@ video {
   --tw-gradient-stops: var(--tw-gradient-from), #dbeafe, var(--tw-gradient-to);
 }
 
-.leading > :not([hidden]) ~ :not([hidden]){
+.principal > :not([hidden]) ~ :not([hidden]){
   --tw-space-y-reverse: 0;
   margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(1rem * var(--tw-space-y-reverse));
 }
 
-.leading--y-centered{
+.principal--y-centered{
   display: flex;
   flex-direction: column;
   align-items: flex-start;

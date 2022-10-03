@@ -17,6 +17,14 @@
     @apply bg-white text-primary;
 }
 
+.btn--toggle{
+    @apply text-primary bg-lightviolet;
+}
+
+.toggled-btn-container{
+    @apply px-1 py-1 rounded-xl bg-lightviolet;
+}
+
 .btn--inner{
     @apply -ml-40;
 }

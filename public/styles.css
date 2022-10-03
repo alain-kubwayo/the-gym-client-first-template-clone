@@ -747,6 +747,23 @@ video {
   color: rgb(29 33 48 / var(--tw-text-opacity));
 }
 
+.btn--toggle{
+  --tw-bg-opacity: 1;
+  background-color: rgb(224 228 252 / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(29 33 48 / var(--tw-text-opacity));
+}
+
+.toggled-btn-container{
+  border-radius: 0.75rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(224 228 252 / var(--tw-bg-opacity));
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+
 .btn--inner{
   margin-left: -10rem;
 }

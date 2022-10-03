@@ -12,7 +12,10 @@ module.exports = {
       colors: {
         'primary': '#1D2130',
         'secondary': '#6B7CFF',
-        'tertiary': '#E0E4FC'
+        'lightviolet': '#E0E4FC',
+        'lightpink': '#D798E1',
+        'grayish': '#2B2E3C',
+        'footer': '#888888'
       }
     },
   },

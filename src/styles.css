@@ -6,6 +6,190 @@
 
 
 .header{
-    @apply h-[screen];
-    background: radial-gradient(483.9% 2719.65% at -49.5% -250%, #D798E1 17.55%, #9BFFA5 27.56%, #AED3FF 49.89%, #C9D4EF 56.53%, #CACFFA 65.69%);
+    background-image: radial-gradient(rgb(222, 242, 251), rgb(235, 255, 250), white, white);
+}
+
+.btn{
+    @apply px-10 py-4 text-white bg-primary rounded-xl;
+}
+
+.btn--light{
+    @apply bg-white text-primary;
+}
+
+.btn--inner{
+    @apply -ml-40;
+}
+
+.solutions{
+    @apply px-[4%] flex flex-col items-center text-center gap-4;
+}
+
+.label{
+    @apply text-2xl font-bold;
+    background: linear-gradient(53.94deg, #373FFF 15.02%, #3ACAF8 82.83%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.subtitle{
+    @apply text-5xl font-bold;
+}
+
+.subtitle--centered{
+    @apply text-center;
+}
+
+.banner{
+    @apply grid w-full grid-cols-1 gap-4 px-10 py-10 text-left md:grid-cols-3 rounded-3xl;
+}
+
+.banner--light-violet{
+    @apply bg-lightviolet;
+}
+
+.banner--light-pink{
+    background: rgba(215, 152, 225, 0.15);
+
+}
+
+
+.banner-security{
+    @apply flex flex-col space-y-4;
+}
+
+.banner-performance{
+    @apply flex flex-col space-y-4;
+}
+
+.banner-support{
+    @apply flex flex-col space-y-4;
+}
+
+.banner__title{
+    @apply text-2xl font-bold;
+
+}
+
+.banner__description{
+    @apply text-base;
+}
+
+.two-columned-section{
+    @apply p-[4%] grid grid-cols-1 md:grid-cols-2 gap-4;
+}
+
+.single-columned-section{
+    @apply p-[4%];
+}
+
+.single-columned-section--centered{
+    @apply space-y-5 text-center;
+}
+
+.y-padded-md{
+    @apply py-10;
+}
+
+.y-padded-lg{
+    @apply py-32;
+}
+
+.y-padded-lg-top{
+    @apply pt-32;
+}
+
+.y-padded-sm{
+    @apply py-4;
+}
+
+.two-columned-section--violet-fill-to-r{
+    @apply bg-gradient-to-r from-green-100 via-blue-100;
+}
+
+.two-columned-section--violet-fill-to-l{
+    @apply bg-gradient-to-l from-green-100 via-blue-100;
+}
+
+.single-columned-section--violet-fill{
+    @apply bg-gradient-to-t from-green-100 via-blue-100;
+}
+
+.leading{
+    @apply space-y-4;
+}
+
+.leading--y-centered{
+    @apply flex flex-col items-start justify-center;
+}
+
+.secondary{
+    @apply flex flex-col items-center justify-center gap-8;
+}
+
+.arrowed-content{
+    @apply flex items-center gap-x-3;
+}
+
+.logos{
+    @apply px-[4%] flex justify-between flex-wrap;
+}
+
+.card-system{
+    @apply grid grid-cols-1 gap-4 md:grid-cols-3;
+}
+
+.card{
+    @apply flex flex-col items-center px-8 py-8 space-y-3 border border-gray-300 shadow-lg rounded-3xl;
+}
+
+.footer{
+    @apply p-[4%] bg-primary text-gray-400;
+}
+
+.footer-title{
+    @apply mb-2 text-white;
+}
+
+.footer-links{
+    @apply grid grid-cols-1 md:grid-cols-4;
+}
+
+.y-spaced-links{
+    @apply space-y-2;
+}
+
+.footer-socials{
+    @apply flex items-center justify-center py-10 gap-x-10;
+}
+
+.line{
+    @apply w-full h-1 bg-footer;
+}
+
+.footer-icons{
+    @apply flex justify-between w-full;
+}
+
+.footer-social{
+    @apply w-4 h-4;
+}
+
+/* Product */
+
+.logos--product{
+    @apply -mt-32;
+}
+
+
+.logo{
+    @apply w-32 h-6;
+}
+
+.banner--services{
+    @apply py-20 mt-8 -ml-32;
+    background: rgba(255, 255, 255, 0.69);
+    border-radius: 0px 67px 0px 0px;
 }

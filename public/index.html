@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="./styles.css">
 </head>
 <body class="bg-white font-body text-primary">
-    <nav class="px-[4%] py-1 flex items-center justify-between">
-        <div class="">
+    <nav class="px-[4%] py-1 flex items-center justify-between flex-wrap">
+        <div>
             <img src="./assets/logo.png" alt="Logo">
         </div>
         <ul class="flex items-center gap-x-4">
@@ -31,19 +31,272 @@
             <li>
                 <a href="./pages/contact.html">Contact</a>
             </li>
-            <button class="px-10 py-4 text-white bg-primary rounded-xl">Free Trial</button>
+            <button class="btn">Free Trial</button>
         </ul>
     </nav>
-    <header class="header px-[4%]">
-        <div class="flex flex-col items-center space-y-20 text-center">
+    <header class="header px-[4%] pt-20 pb-36">
+        <div class="flex flex-col items-center space-y-10 text-center">
             <h1 class="font-bold text-title">The Best Software to Grow <br> your Sales and Services</h1>
             <p class="">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor <br> invidunt ut labore et dolore magna aliquyam erat.
             </p>
-            <div>
-                <input type="text" placeholder="Enter Your Email" class="py-6 px-14">
-                <button class="px-10 py-4 text-white bg-primary rounded-xl">Free Trial</button>
+            <div class="w-full">
+                <input type="text" placeholder="Enter Your Email" class="w-1/2 py-6 px-14 rounded-[1.25rem]">
+                <button class="btn btn--inner">Free Trial</button>
             </div>
         </div>
     </header>
+    <section class="dashboard px-[4%] pt-12 pb-20 flex items-center justify-center w-full -mt-32">
+        <img src="./assets/dashboard-img.png" alt="Dashboard Image" class="w-8/12" >
+    </section>
+    <section class="solutions">
+        <h3 class="label">High Quality</h3>
+        <h2 class="subtitle">We Have the Best Solution <br> for your Business</h2>
+        <div class="banner banner--light-violet">
+            <div class="banner-security">
+                <div class="banner__img-container">
+                    <img class="banner__img" src="./assets/ok-icon.svg" alt="Ok Icon" />
+                </div>
+                <div class="banner__title">
+                    High security to protect <br> from piracy
+                </div>
+                <div class="banner__description">
+                    Lorem ipsum dolor sit amet, consetetur sadipscing <br> elitr, sed diam nonumy.
+                </div>
+            </div> 
+            <div class="banner-performance">
+                <div class="banner__img-container">
+                    <img class="banner__img" src="./assets/thumb-icon.svg" alt="Thumb Icon" />
+                </div>
+                <div class="banner__title">
+                    High security to protect <br> from piracy
+                </div>
+                <div class="banner__description">
+                    Lorem ipsum dolor sit amet, consetetur sadipscing <br> elitr, sed diam nonumy.
+                </div>
+            </div> 
+            <div class="banner-support">
+                <div class="banner__img-container">
+                    <img class="banner__img" src="./assets/headphone-icon.svg" alt="Headphone Icon" />
+                </div>
+                <div class="banner__title">
+                    High security to protect <br> from piracy
+                </div>
+                <div class="banner__description">
+                    Lorem ipsum dolor sit amet, consetetur sadipscing <br> elitr, sed diam nonumy.
+                </div>
+            </div> 
+        </div>
+    </section>
+    <section class="two-columned-section y-padded-lg">
+        <div class="leading">
+            <h3 class="label">Why should you work with us?</h3>
+            <h2 class="subtitle">To Upscale your business <br> to the next level</h2>
+            <p class="text-base">
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy <br> eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam <br> voluptua invidunt ut labore.
+            </p>
+        </div>
+        <div class="secondary">
+            <div class="arrowed-content">
+                <div>
+                    <img src="./assets/circled-arrow-icon.svg" alt="Circled Arrow Icon">
+                </div>
+                <div class="description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br> sed do eiusmod.
+                </div>
+            </div>
+            <div class="arrowed-content">
+                <div>
+                    <img src="./assets/circled-arrow-icon.svg" alt="Circled Arrow Icon">
+                </div>
+                <div class="description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br> sed do eiusmod.
+                </div>
+            </div>
+            <div class="arrowed-content">
+                <div>
+                    <img src="./assets/circled-arrow-icon.svg" alt="Circled Arrow Icon">
+                </div>
+                <div class="description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br> sed do eiusmod.
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="two-columned-section two-columned-section--violet-fill-to-r y-padded-md">
+        <div class="leading leading--y-centered">
+            <h2 class="subtitle">More impressions, more <br> conversions</h2>
+            <p class="text-base">
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy <br> eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam <br> voluptua invidunt ut labore.
+            </p>
+            <button class="btn">Free Trial</button>
+        </div>
+        <div class="secondary">
+            <img src="./assets/impression-img.png" alt="">
+        </div>
+    </section>
+    <section class="logos y-padded-md">
+        <img src="./assets/logo-2.png" alt="Logo 2">
+        <img src="./assets/logo-3.png" alt="Logo 3">
+        <img src="./assets/logo-1.png" alt="Logo 1">
+        <img src="./assets/logo-4.png" alt="Logo 4">
+        <img src="./assets/logo-5.png" alt="Logo 5">
+    </section>
+    <section class="two-columned-section y-padded-lg">
+        <div class="leading">
+            <h3 class="label">Discover More</h3>
+            <h2 class="subtitle">Analyse your sales and <br> marketing leads</h2>
+            <p class="text-base">
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy <br> eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam <br> voluptua invidunt ut labore.
+            </p>
+        </div>
+        <div class="secondary">
+            <div class="arrowed-content">
+                <div>
+                    <img src="./assets/feature-icon-3.png" alt="Feature Icon">
+                </div>
+                <div class="description">
+                    <h4 class="text-2xl font-bold">Sales Tracking</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br> sed do eiusmod.</p>
+                </div>
+            </div>
+            <div class="arrowed-content">
+                <div>
+                    <img src="./assets/feature-icon-2.png" alt="Feature Icon">
+                </div>
+                <div class="description">
+                    <h4 class="text-2xl font-bold">Sales Tracking</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br> sed do eiusmod.</p>
+                </div>
+            </div>
+            <div class="arrowed-content">
+                <div>
+                    <img src="./assets/feature-icon-1.png" alt="Feature Icon">
+                </div>
+                <div class="description">
+                    <h4 class="text-2xl font-bold">Sales Tracking</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br> sed do eiusmod.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="single-columned-section">
+        <h2 class="mb-8 subtitle subtitle--centered">Features</h2>
+        <div class="banner banner--light-pink">
+            <div class="banner-security">
+                <div class="banner__img-container">
+                    <img class="banner__img" src="./assets/features-icon-1.svg" alt="Icon" />
+                </div>
+                <div class="banner__title">
+                    Advanced 256-bit <br> encryption
+                </div>
+                <div class="banner__description">
+                    Lorem ipsum dolor sit amet, consetetur <br> sadipscing elitr, sed diam nonumy eirmod <br> tempor.
+                </div>
+            </div> 
+            <div class="banner-performance">
+                <div class="banner__img-container">
+                    <img class="banner__img" src="./assets/features-icon-2.svg" alt="Icon" />
+                </div>
+                <div class="banner__title">
+                    Simple collaboration <br> tools
+                </div>
+                <div class="banner__description">
+                    Lorem ipsum dolor sit amet, consetetur <br> sadipscing elitr, sed diam nonumy eirmod <br> tempor.
+                </div>
+            </div> 
+            <div class="banner-support">
+                <div class="banner__img-container">
+                    <img class="banner__img" src="./assets/features-icon-3.svg" alt="Icon" />
+                </div>
+                <div class="banner__title">
+                    Customizable AI <br> features
+                </div>
+                <div class="banner__description">
+                    Lorem ipsum dolor sit amet, consetetur <br> sadipscing elitr, sed diam nonumy eirmod <br> tempor.
+                </div>
+            </div> 
+        </div>
+    </section>
+    <section class="single-columned-section">
+        <h2 class="mb-8 subtitle subtitle--centered">The stunning results our <br> customers have experienced</h2>
+        <div class="card-system">
+            <div class="card">
+                <p class="text-base text-center">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+                <img src="./assets/user-1.png" alt="User Profile" class="w-1/6 h-2/5">
+                <h5>Ron Wood</h5>
+                <p>CEO</p>
+            </div>
+            <div class="card">
+                <p class="text-base text-center">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+                <img src="./assets/user-2.png" alt="User Profile" class="w-1/6 h-2/5">
+                <h5>Mark Mason</h5>
+                <p>Marketing Manager</p>
+            </div>
+            <div class="card">
+                <p class="text-base text-center">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+                <img src="./assets/user-3.png" alt="User Profile" class="w-1/6 h-2/5">
+                <h5>Sam Preston</h5>
+                <p>CTO</p>
+            </div>
+        </div>
+    </section>
+    <section class="single-columned-section single-columned-section--centered single-columned-section--violet-fill y-padded-lg">
+        <h2 class="subtitle">Are you ready to grow your <br> business with us?</h2>
+        <p class="text-base">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy.</p>
+        <button class="btn">View Pricing</button>
+    </section>
+    <footer class="footer">
+        <div class="footer-links">
+            <div>
+                <h5 class="footer-title">Company</h5>
+                <ul class="y-spaced-links">
+                    <li>About Us</li>
+                    <li>Why Choose us</li>
+                    <li>Pricing</li>
+                    <li>Testimonial</li>
+                </ul>
+            </div>
+            <div>
+                <h5 class="footer-title">Resources</h5>
+                <ul class="y-spaced-links">
+                    <li>Privacy Policy</li>
+                    <li>Terms and Condition</li>
+                    <li>Blog</li>
+                    <li>Contact Us</li>
+                </ul>
+            </div>
+            <div>
+                <h5 class="footer-title">Product</h5>
+                <ul class="y-spaced-links">
+                    <li>Project Management</li>
+                    <li>Time tracker</li>
+                    <li>Time schedule</li>
+                    <li>Lead generate</li>
+                    <li>Remote collaboration</li>
+                </ul>
+            </div>
+            <div class="flex flex-col space-y-10">
+                <img src="./assets/logo-white.png" alt="White Logo" class="w-1/3">
+                <div>
+                    <h5>Subscribe to our newsletter</h5>
+                    <div class="flex">
+                        <input type="text" placeholder="Enter your Email" class="py-2 px-4 rounded-[1.25rem] w-full bg-grayish outline-none">
+                        <button class="-ml-36 btn btn--light">Subscribe</button>
+                    </div>
+                </div> 
+            </div>
+        </div>
+        <div class="footer-socials">
+            <div class="line"></div>
+            <div class="footer-icons">
+                <p>&copy; Copyright Finsweet 2022</p>
+                <img src="./assets/facebook.png" alt="Facebook Icon" class="footer-social">
+                <img src="./assets/twitter.png" alt="Twitter Icon" class="footer-social">
+                <img src="./assets/instagram.png" alt="Instagram Icon" class="footer-social">
+                <img src="./assets/linkedin.png" alt="Linkedin Icon" class="footer-social">
+            </div>
+            <div class="line"></div>
+        </div>
+    </footer>
 </body>
 </html>

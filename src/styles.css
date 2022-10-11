@@ -4,9 +4,9 @@
 @tailwind utilities;
 
 
-
-.header{
-    background-image: radial-gradient(rgb(222, 242, 251), rgb(235, 255, 250), white, white);
+/* custom css */
+.spacing {
+    @apply px-[4%];
 }
 
 .btn{
@@ -19,10 +19,6 @@
 
 .btn--toggle{
     @apply text-primary bg-lightviolet;
-}
-
-.toggled-btn-container{
-    @apply px-1 py-1 rounded-xl bg-lightviolet;
 }
 
 .btn--inner{
@@ -46,6 +42,11 @@
     @apply text-5xl font-bold;
 }
 
+.subtitle--medium{
+    @apply text-4xl;
+}
+
+
 .subtitle--centered{
     @apply text-center;
 }
@@ -60,7 +61,6 @@
 
 .banner--light-pink{
     background: rgba(215, 152, 225, 0.15);
-
 }
 
 
@@ -150,7 +150,7 @@
 }
 
 .card{
-    @apply flex flex-col items-center px-8 py-8 space-y-3 border border-gray-300 shadow-lg rounded-3xl;
+    @apply flex flex-col px-8 py-8 space-y-3 border border-gray-300 shadow-lg rounded-3xl;
 }
 
 .footer{
@@ -201,3 +201,169 @@
     background: rgba(255, 255, 255, 0.69);
     border-radius: 0px 67px 0px 0px;
 }
+/* 
+.plans{
+    @apply grid w-full grid-cols-3 gap-10;
+} */
+
+/* REWORKED STYLES */
+/* NAVIGATION PRICING.HTML */
+.nav{
+    @apply px-[4%] py-1 flex items-center justify-between flex-wrap;
+}
+
+.nav__list{
+    @apply flex items-center gap-x-4;
+}
+
+.nav__btn{
+    @apply px-10 py-4 text-white bg-primary rounded-xl;
+}
+
+/* HEADER */
+.header{
+    @apply px-[4%] pt-20 pb-10;
+    background-image: radial-gradient(rgb(222, 242, 251), rgb(235, 255, 250), white, white);
+}
+
+.header__content{
+    @apply flex flex-col items-center space-y-10 text-center;
+}
+
+.header__title{
+    @apply font-bold text-title leading-[110%];
+}
+
+.header__toggled-btns{
+    @apply px-1 py-1 rounded-xl bg-lightviolet;
+}
+
+.header__btn{
+    @apply px-10 py-4 text-white bg-primary rounded-xl;
+}
+
+.header__btn--toggle{
+    @apply text-primary bg-lightviolet;
+}
+
+/* PLANS */
+.plans{
+    @apply px-[4%] pb-4 grid grid-cols-3 gap-x-12;
+    background-image: radial-gradient(rgb(222, 242, 251), white, white, white, white, white, white, rgb(235, 255, 250));
+}
+
+.price-card{
+    @apply flex flex-col py-8 space-y-3 border border-gray-300 shadow-lg rounded-3xl;
+}
+
+.price-card--secondary{
+    @apply border-2 border-violet-800 bg-gradient-to-t from-green-100 via-green-50 to-violet-50;
+}
+
+.price-card__header{
+    @apply flex items-center px-8 py-4 gap-x-4;
+}
+
+.price-card__plan-name{
+    @apply text-4xl font-bold;
+}
+
+.price-card__plan-description{
+    @apply text-sm;
+}
+
+.price-card__divider{
+    @apply w-full h-0.5 bg-gray-100;
+}
+
+.price-card__list, .price-card__description, .price-card__price-tag, .price-card__btn-container{
+    @apply  px-8;
+}
+
+.price-card__list{
+    @apply py-4 space-y-6 font-semibold;
+}
+
+.price-card__list-item{
+    @apply flex items-center gap-x-2;
+}
+
+.price-card__description{
+    @apply text-sm text-center;
+}
+
+.price-card__price-tag{
+    @apply py-4 text-center;
+}
+
+.price-card__price{
+    @apply text-4xl font-bold;
+}
+
+.price-card__period{
+    @apply text-xs;
+}
+
+.price-card__btn-container{
+    @apply flex items-center justify-center py-4;
+}
+
+.price-card__btn{
+    @apply px-10 py-4 text-white bg-primary rounded-xl;
+}
+
+/* FAQs */
+
+.questions{
+    @apply px-[4%] py-32;
+}
+
+.faq{
+    @apply bg-[#F0F2FE] p-[3%] grid md:grid-cols-2 rounded-3xl;
+}
+
+.faq-card{
+    @apply px-8 py-8 bg-white rounded-3xl;
+}
+
+.faq-card__business, .faq-card__subscription, .faq-card__support, .faq-card__credit-card{
+    @apply flex items-center justify-between ;
+}
+
+.faq__title{
+    @apply leading-[120%] font-semibold text-5xl;
+}
+
+.faq__header{
+    @apply space-y-4;
+}
+
+.faq__description{
+    @apply text-base;
+}
+
+.faq__list{
+    @apply space-y-4;
+}
+
+.faq-card__subtitle{
+    @apply leading-[140%] text-2xl font-bold;
+}
+
+/* CTA */
+.cta{
+    @apply px-[4%] py-32 space-y-5 text-center bg-gradient-to-t from-green-100 via-blue-100;
+}
+
+.cta__subtitle{
+    @apply text-5xl font-bold;
+}
+
+.cta__description{
+    @apply text-base;
+}
+
+.cta__btn{
+    @apply px-10 py-4 text-white bg-primary rounded-xl;
+}
+

@@ -74,8 +74,8 @@
     @apply space-y-4;
 }
 
-.reasons__label{
-    @apply text-[20px];
+.reasons__list{
+    @apply space-y-6;
 }
 
 .reasons__label--highlighted{
@@ -96,7 +96,7 @@
 }
 
 .reasons__label{
-    @apply text-[20px] leading-[150%];
+    @apply text-xl leading-[150%];
 }
 
 .reasons__description{
@@ -144,12 +144,29 @@
     @apply flex flex-col items-center justify-center space-y-10;
 }
 
+.sales__label{
+    @apply text-2xl font-bold;
+    background: linear-gradient(53.94deg, #373FFF 15.02%, #3ACAF8 82.83%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 .sales__item{
     @apply flex items-center gap-[0.75rem];
 }
 
+.sales__title{
+    @apply text-5xl font-bold;;
+}
+
 .sales__headline{
     @apply text-2xl font-bold;
+}
+
+.sales__description{
+    @apply text-base;
 }
 
 .features{

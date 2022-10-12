@@ -70,9 +70,6 @@
     @apply p-[4%] grid grid-cols-1 md:grid-cols-2 gap-4;
 }
 
-.reasons__principal{
-    @apply space-y-4;
-}
 
 .reasons__list{
     @apply space-y-6;
@@ -112,7 +109,7 @@
 }
 
 .conversions__principal{
-    @apply flex flex-col items-start justify-center space-y-4;;
+    @apply flex flex-col items-start justify-center space-y-4;
 }
 
 .conversions__title{
@@ -277,6 +274,89 @@
 
 .footer__social{
     @apply w-4 h-4;
+}
+
+/* PRODUCT.HTML */
+.product-header{
+    @apply p-[4%] bg-gradient-to-r from-green-100 via-blue-100;;
+}
+
+.product-header__main-content{
+    @apply grid grid-cols-1 gap-4 py-10 md:grid-cols-2;
+}
+
+.product-header__content{
+    @apply flex flex-col items-start justify-center space-y-4;
+}
+
+.product-header__title{
+    @apply text-5xl font-bold;
+}
+
+.product-header__description{
+    @apply text-base;
+}
+
+.product-header__btn--dark{
+    @apply text-white bg-primary;
+}
+
+.product-header__btn--light{
+    @apply text-black bg-white shadow-md;
+}
+
+.product-header__btn{
+    @apply px-10 py-4 rounded-xl;
+}
+
+.features--with-gradient{
+    @apply bg-gradient-to-r from-green-200 via-blue-100;
+}
+
+.features__list--transformed{
+    @apply -mb-10 -ml-20 rounded-none rounded-tr-3xl;
+    background: rgba(240, 251, 249);
+}
+
+.product-card{
+    @apply  px-[4%] grid grid-cols-1 md:grid-cols-2 gap-4 py-10;
+}
+
+.product-card__content{
+    @apply space-y-4;
+}
+
+.product-card__label{
+    @apply text-xl leading-[150%];
+}
+
+.product-card__label--highlighted{
+    @apply text-2xl font-bold;
+    background: linear-gradient(53.94deg, #373FFF 15.02%, #3ACAF8 82.83%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.product-card__title{
+    @apply text-5xl font-bold;
+}
+
+.product-card__tag{
+    @apply text-base;
+}
+
+.product-card__chart{
+    @apply h-[80%] w-[80%] object-contain;
+}
+
+.product-card__content--with-gradient{
+    background-image: radial-gradient(rgb(222, 242, 251), rgb(235, 255, 250), white, white);
+}
+
+.product-card__chart-container--with-gradient{
+    background-image: radial-gradient(rgb(222, 242, 251), rgb(235, 255, 250), white, white);
 }
 
 

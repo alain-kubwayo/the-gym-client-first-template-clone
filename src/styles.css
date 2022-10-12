@@ -276,6 +276,10 @@
     @apply w-4 h-4;
 }
 
+.footer__subscribe-input{
+    @apply flex;
+}
+
 /* PRODUCT.HTML */
 .product-header{
     @apply p-[4%] bg-gradient-to-r from-green-100 via-blue-100;;
@@ -508,19 +512,19 @@
 }
 
 /* CTA */
-.cta{
+.call-to-action{
     @apply px-[4%] py-32 space-y-5 text-center bg-gradient-to-t from-green-100 via-blue-100 to-gray-50;
 }
 
-.cta__subtitle{
+.call-to-action__subtitle{
     @apply text-5xl font-bold;
 }
 
-.cta__description{
+.call-to-action__description{
     @apply text-base;
 }
 
-.cta__btn{
+.call-to-action__btn{
     @apply px-10 py-4 text-white bg-primary rounded-xl;
 }
 

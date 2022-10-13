@@ -1,0 +1,583 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* INDEX.HTML */
+
+.header__advertisement{
+    @apply flex flex-col items-center space-y-10 text-center;
+}
+
+.header__subscription-form{
+    @apply w-full;
+}
+
+.header__input-field{
+    @apply  w-1/2 py-6 px-14 rounded-[1.25rem];
+}
+
+.dashboard{
+    @apply  px-[4%] pt-12 pb-20 flex items-center justify-center;
+}
+
+.dashboard__image{
+    @apply w-[70%];
+}
+
+.solutions, .about-us{
+    @apply px-[4%] flex flex-col items-center text-center gap-4;
+}
+
+.solutions__label, .about-us__label, .planning__label{
+    @apply text-2xl font-bold text-[#373fff];
+}
+
+.solutions__title, .about-us__title, .planning__title{
+    @apply font-bold;
+}
+
+.solutions__title--big, .about-us__title--big, .planning__title--big{
+    @apply text-5xl leading-[120%];
+}
+
+.solutions__title--medium{
+    @apply text-[32px] leading-[120%];
+}
+
+.solutions__banner{
+    @apply grid w-full grid-cols-1 gap-4 px-10 py-10 mt-8 text-left md:grid-cols-3 rounded-3xl;
+}
+
+.solutions__security, .solutions__performance, .solutions__support{
+    @apply flex flex-col space-y-4;
+}
+
+.solutions__description{
+    @apply text-base;
+}
+
+.solutons__banner--primary{
+    @apply bg-lightviolet;
+}
+
+.reasons{
+    @apply p-[4%] grid grid-cols-1 md:grid-cols-2 gap-4;
+}
+
+
+.reasons__list{
+    @apply space-y-6;
+}
+
+.reasons__label--highlighted{
+    @apply text-2xl font-bold;
+}
+
+.reasons__title{
+    @apply text-5xl font-bold;
+}
+
+.reasons__tag{
+    @apply text-base;
+}
+
+.reasons__label{
+    @apply text-xl leading-[150%];
+}
+
+.reasons__description{
+    @apply flex items-center gap-x-3;
+}
+
+.conversions{
+    @apply p-[4%] grid grid-cols-1 md:grid-cols-2 gap-4 py-10;
+}
+
+.conversions--primary{
+    @apply bg-gradient-to-r from-green-100 via-blue-100;
+}
+
+.conversions__principal{
+    @apply flex flex-col items-start justify-center space-y-4;
+}
+
+.conversions__title{
+    @apply text-5xl font-bold;
+}
+
+.conversions__description{
+   @apply text-base;
+}
+
+.conversions__btn{
+    @apply px-10 py-4 text-white bg-primary rounded-xl;
+}
+
+.logos{
+    @apply px-[4%] flex justify-between flex-wrap py-10;;
+}
+
+.sales{
+    @apply px-[4%] py-20 grid grid-cols-1 md:grid-cols-2 gap-4;
+}
+
+.sales__content{
+    @apply space-y-4;
+}
+
+
+.sales__list{
+    @apply flex flex-col items-center justify-center space-y-10;
+}
+
+.sales__label{
+    @apply text-2xl font-bold;
+}
+
+.sales__item{
+    @apply flex items-center gap-[0.75rem];
+}
+
+.sales__title{
+    @apply text-5xl font-bold;;
+}
+
+.sales__headline{
+    @apply text-2xl font-bold;
+}
+
+.sales__description{
+    @apply text-base;
+}
+
+.features{
+    @apply p-[4%] space-y-10;
+}
+
+.features__title{
+    @apply font-bold;
+}
+
+.features__title--centered{
+    @apply text-center;
+}
+
+.features__title--big{
+    @apply text-5xl;
+}
+
+.features__title--medium{
+    @apply text-2xl;
+}
+
+
+.features__list{
+    @apply grid w-full grid-cols-1 gap-4 px-10 py-10 text-left md:grid-cols-3 rounded-3xl bg-[#d798e126];
+}
+
+.features__item{
+    @apply space-y-4;
+}
+
+.features__icon{
+    @apply w-10 h-10;
+}
+
+.testimonials{
+    @apply px-[4%] py-20;
+}
+
+.testimonials__title{
+    @apply mb-8 text-5xl font-bold text-center;
+}
+
+.testimonials__cards{
+    @apply grid grid-cols-1 gap-4 md:grid-cols-3;
+}
+
+.testimonials__card{
+    @apply flex flex-col px-8 py-8 space-y-3 border border-gray-300 shadow-lg rounded-3xl;
+}
+
+.testimonials__description{
+    @apply text-base text-center;
+}
+
+.testimonials__wrapper{
+    @apply flex items-center justify-center w-full;
+}
+
+.testimonials__avatar{
+    @apply w-1/5;
+}
+
+.testimonials__name, .testimonials__job-title{
+    @apply text-center;
+}
+
+.footer{
+    @apply p-[4%] bg-primary text-gray-400;
+}
+
+.footer__links{
+    @apply grid grid-cols-1 md:grid-cols-4;
+}
+
+.footer__title{
+    @apply mb-2 text-white;
+}
+
+.footer__list{
+    @apply space-y-3;
+}
+
+.footer__subscribe{
+    @apply flex flex-col space-y-10;
+}
+
+.footer__logo{
+    @apply w-1/3;
+}
+
+.footer__label{
+    @apply text-gray-50;
+}
+
+.footer__socials{
+    @apply flex items-center justify-center py-10 gap-x-10;
+}
+
+.footer__line{
+    @apply w-full h-1 bg-footer;
+}
+
+.footer__icons{
+    @apply flex justify-between w-full;
+}
+
+.footer__social{
+    @apply w-4 h-4;
+}
+
+.footer__subscribe-input{
+    @apply flex;
+}
+
+/* PRODUCT.HTML */
+.product-header{
+    @apply p-[4%] bg-gradient-to-r from-green-100 via-blue-100;;
+}
+
+.product-header__main-content{
+    @apply grid grid-cols-1 gap-4 py-10 md:grid-cols-2;
+}
+
+.product-header__content{
+    @apply flex flex-col items-start justify-center space-y-4;
+}
+
+.product-header__title{
+    @apply text-5xl font-bold;
+}
+
+.product-header__description{
+    @apply text-base;
+}
+
+.product-header__btn--dark{
+    @apply text-white bg-primary;
+}
+
+.product-header__btn--light{
+    @apply text-black bg-white shadow-md;
+}
+
+.product-header__btn{
+    @apply px-10 py-4 rounded-xl;
+}
+
+.features--with-gradient{
+    @apply bg-gradient-to-r from-green-200 via-blue-100;
+}
+
+.features__list--transformed{
+    @apply -mb-10 -ml-20 rounded-none rounded-tr-3xl bg-[#f0fbf9];
+}
+
+.product-card{
+    @apply  px-[4%] grid grid-cols-1 md:grid-cols-2 gap-4 py-10;
+}
+
+.product-card__content{
+    @apply space-y-4;
+}
+
+.product-card__label{
+    @apply text-xl leading-[150%];
+}
+
+.product-card__label--highlighted{
+    @apply text-2xl font-bold text-[#373fff];
+}
+
+.product-card__title{
+    @apply text-5xl font-bold;
+}
+
+.product-card__tag{
+    @apply text-base;
+}
+
+.product-card__chart{
+    @apply h-[80%] w-[80%] object-contain;
+}
+
+
+/* PRICING.HTML */
+.nav{
+    @apply px-[4%] py-1 flex items-center justify-between flex-wrap;
+}
+
+.nav__list{
+    @apply flex items-center gap-x-4;
+}
+
+.nav__btn{
+    @apply px-10 py-4 text-white bg-primary rounded-xl;
+}
+
+/* HEADER */
+.header{
+    @apply px-[4%] pt-20 pb-10 bg-gradient-to-r from-[#ebfffa];
+}
+
+.header__content{
+    @apply flex flex-col items-center space-y-10 text-center;
+}
+
+.header__title{
+    @apply font-bold text-title leading-[110%];
+}
+
+.header__toggled-btns{
+    @apply px-1 py-1 rounded-xl bg-lightviolet;
+}
+
+.header__btn{
+    @apply px-10 py-4 text-white bg-primary rounded-xl;
+}
+
+.header__btn--inner{
+    @apply -ml-40;
+}
+
+.header__btn--toggle{
+    @apply text-primary bg-lightviolet;
+}
+
+/* PLANS */
+.plans{
+    @apply px-[4%] pb-4 grid grid-cols-3 gap-x-12;
+}
+
+.plans__card{
+    @apply flex flex-col py-8 space-y-3 border border-gray-300 shadow-lg rounded-3xl;
+}
+
+.plans__card--secondary{
+    @apply border-2 border-violet-800 bg-gradient-to-t from-green-100 via-green-50 to-violet-50;
+}
+
+.plans__card-header{
+    @apply flex items-center px-8 py-4 gap-x-4;
+}
+
+.plans__card-name{
+    @apply text-4xl font-bold;
+}
+
+.plans__card-description{
+    @apply text-sm;
+}
+
+.plans__card-divider{
+    @apply w-full h-0.5 bg-gray-100;
+}
+
+.plans__card-list, .plans__card-description, .plans__card-price-tag, .plans__card-btn-container{
+    @apply  px-8;
+}
+
+.plans__card-list{
+    @apply py-4 space-y-6 font-semibold;
+}
+
+.plans__card-list-item{
+    @apply flex items-center gap-x-2;
+}
+
+.plans__card-description{
+    @apply text-sm text-center;
+}
+
+.plans__card-price-tag{
+    @apply py-4 text-center;
+}
+
+.plans__card-price{
+    @apply text-4xl font-bold;
+}
+
+.plans__card-period{
+    @apply text-xs;
+}
+
+.plans__card-btn-container{
+    @apply flex items-center justify-center py-4;
+}
+
+.plans__card-btn{
+    @apply px-10 py-4 text-white bg-primary rounded-xl;
+}
+
+/* FAQs */
+
+.faq{
+    @apply px-[4%] py-32;
+}
+
+.faq__container{
+    @apply bg-[#F0F2FE] p-[3%] grid md:grid-cols-2 rounded-3xl;
+}
+
+.faq__list{
+    @apply space-y-4;
+}
+
+.faq__list-item{
+    @apply px-8 py-8 space-y-4 bg-white rounded-3xl;
+}
+
+.faq__question{
+    @apply flex items-center justify-between;
+}
+
+.faq__title{
+    @apply leading-[120%] font-semibold text-5xl;
+}
+
+.faq__header{
+    @apply space-y-4;
+}
+
+.faq__description{
+    @apply text-base;
+}
+
+.faq__question{
+    @apply leading-[140%] text-2xl font-bold;
+}
+
+/* CTA */
+.call-to-action{
+    @apply px-[4%] py-32 space-y-5 text-center bg-gradient-to-t from-green-100 via-blue-100 to-gray-50;
+}
+
+.call-to-action__subtitle{
+    @apply text-5xl font-bold;
+}
+
+.call-to-action__description{
+    @apply text-base;
+}
+
+.call-to-action__btn{
+    @apply px-10 py-4 text-white bg-primary rounded-xl;
+}
+
+/* CONTACT.HTML */
+
+.contact{
+    @apply px-[4%] py-32 space-y-5 bg-gradient-to-r from-green-50 via-blue-100;
+}
+
+.contact__title{
+    @apply font-bold;
+}
+
+.contact__title--centered{
+    @apply text-center;
+}
+
+.contact__title--big{
+    @apply leading-[140%] text-[56px];
+}
+
+.contact__title--medium{
+    @apply leading-[120%] text-[36px]
+}
+
+.contact__card{
+    @apply bg-[#F0F2FE] p-[3%] rounded-3xl;
+}
+
+.contact__details{
+    @apply grid md:grid-cols-2 md:gap-x-20;
+}
+
+.contact__header{
+    @apply mb-10 space-y-4;
+}
+
+.contact__fillable{
+    @apply space-y-2;
+}
+
+.contact__form{
+    @apply space-y-6;
+}
+
+.contact__names-field{
+    @apply flex w-full space-x-4;
+}
+
+.contact__input-field, .contact__textarea{
+    @apply w-full p-4 rounded-lg;
+}
+
+.contact__btn{
+    @apply w-full px-10 py-4 text-white bg-primary rounded-xl;
+}
+
+.contact__info{
+    @apply flex flex-col px-32 space-y-6;
+}
+
+.contact__free, .contact__help, .contact__sales{
+    @apply flex items-center space-x-6;
+}
+
+.contact__phone-number, .contact__email{
+    @apply text-2xl font-bold leading-[140%];
+}
+
+.contact__label{
+    @apply text-base;
+}
+
+/* ABOUT-US.HTML */
+
+.header__cards{
+    @apply grid grid-cols-3 px-32 py-[4%] gap-x-4;
+}
+
+
+.planning{
+    @apply bg-[#F0F2FE] p-[4%] grid grid-cols-1 md:grid-cols-2 gap-x-20 my-20;
+}
+
+.planning__description{
+    @apply text-base leading-[150%];
+}
+

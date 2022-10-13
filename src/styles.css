@@ -30,12 +30,7 @@
 }
 
 .solutions__label, .about-us__label, .planning__label{
-    @apply text-2xl font-bold;
-    background: linear-gradient(53.94deg, #373FFF 15.02%, #3ACAF8 82.83%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+    @apply text-2xl font-bold text-[#373fff];
 }
 
 .solutions__title, .about-us__title, .planning__title{
@@ -77,11 +72,6 @@
 
 .reasons__label--highlighted{
     @apply text-2xl font-bold;
-    background: linear-gradient(53.94deg, #373FFF 15.02%, #3ACAF8 82.83%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
 }
 
 .reasons__title{
@@ -143,11 +133,6 @@
 
 .sales__label{
     @apply text-2xl font-bold;
-    background: linear-gradient(53.94deg, #373FFF 15.02%, #3ACAF8 82.83%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
 }
 
 .sales__item{
@@ -188,8 +173,7 @@
 
 
 .features__list{
-    @apply grid w-full grid-cols-1 gap-4 px-10 py-10 text-left md:grid-cols-3 rounded-3xl;
-    background: rgba(215, 152, 225, 0.15);
+    @apply grid w-full grid-cols-1 gap-4 px-10 py-10 text-left md:grid-cols-3 rounded-3xl bg-[#d798e126];
 }
 
 .features__item{
@@ -318,8 +302,7 @@
 }
 
 .features__list--transformed{
-    @apply -mb-10 -ml-20 rounded-none rounded-tr-3xl;
-    background: rgba(240, 251, 249);
+    @apply -mb-10 -ml-20 rounded-none rounded-tr-3xl bg-[#f0fbf9];
 }
 
 .product-card{
@@ -335,12 +318,7 @@
 }
 
 .product-card__label--highlighted{
-    @apply text-2xl font-bold;
-    background: linear-gradient(53.94deg, #373FFF 15.02%, #3ACAF8 82.83%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+    @apply text-2xl font-bold text-[#373fff];
 }
 
 .product-card__title{
@@ -353,14 +331,6 @@
 
 .product-card__chart{
     @apply h-[80%] w-[80%] object-contain;
-}
-
-.product-card__content--with-gradient{
-    background-image: radial-gradient(rgb(222, 242, 251), rgb(235, 255, 250), white, white);
-}
-
-.product-card__chart-container--with-gradient{
-    background-image: radial-gradient(rgb(222, 242, 251), rgb(235, 255, 250), white, white);
 }
 
 
@@ -379,8 +349,7 @@
 
 /* HEADER */
 .header{
-    @apply px-[4%] pt-20 pb-10;
-    background-image: radial-gradient(rgb(222, 242, 251), rgb(235, 255, 250), white, white);
+    @apply px-[4%] pt-20 pb-10 bg-gradient-to-r from-[#ebfffa];
 }
 
 .header__content{
@@ -410,7 +379,6 @@
 /* PLANS */
 .plans{
     @apply px-[4%] pb-4 grid grid-cols-3 gap-x-12;
-    background-image: radial-gradient(rgb(222, 242, 251), white, white, white, white, white, white, rgb(235, 255, 250));
 }
 
 .plans__card{

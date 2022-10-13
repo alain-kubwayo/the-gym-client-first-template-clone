@@ -16,7 +16,7 @@ module.exports = {
         'lightpink': '#D798E1',
         'grayish': '#2B2E3C',
         'footer': '#888888'
-      }
+      },
     },
   },
   plugins: [],

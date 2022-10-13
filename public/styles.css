@@ -737,10 +737,8 @@ video {
   font-size: 1.5rem;
   line-height: 2rem;
   font-weight: 700;
-  background: linear-gradient(53.94deg, #373FFF 15.02%, #3ACAF8 82.83%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
+  --tw-text-opacity: 1;
+  color: rgb(55 63 255 / var(--tw-text-opacity));
 }
 
 .solutions__title,  .about-us__title,  .planning__title{
@@ -822,10 +820,6 @@ video {
   font-size: 1.5rem;
   line-height: 2rem;
   font-weight: 700;
-  background: linear-gradient(53.94deg, #373FFF 15.02%, #3ACAF8 82.83%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 
 .reasons__title{
@@ -961,10 +955,6 @@ video {
   font-size: 1.5rem;
   line-height: 2rem;
   font-weight: 700;
-  background: linear-gradient(53.94deg, #373FFF 15.02%, #3ACAF8 82.83%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 
 .sales__item{
@@ -1024,6 +1014,7 @@ video {
   grid-template-columns: repeat(1, minmax(0, 1fr));
   gap: 1rem;
   border-radius: 1.5rem;
+  background-color: #d798e126;
   padding-left: 2.5rem;
   padding-right: 2.5rem;
   padding-top: 2.5rem;
@@ -1035,10 +1026,6 @@ video {
   .features__list{
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
-}
-
-.features__list{
-  background: rgba(215, 152, 225, 0.15);
 }
 
 .features__item > :not([hidden]) ~ :not([hidden]){
@@ -1297,7 +1284,8 @@ video {
   margin-left: -5rem;
   border-radius: 0px;
   border-top-right-radius: 1.5rem;
-  background: rgba(240, 251, 249);
+  --tw-bg-opacity: 1;
+  background-color: rgb(240 251 249 / var(--tw-bg-opacity));
 }
 
 .product-card{
@@ -1332,10 +1320,8 @@ video {
   font-size: 1.5rem;
   line-height: 2rem;
   font-weight: 700;
-  background: linear-gradient(53.94deg, #373FFF 15.02%, #3ACAF8 82.83%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
+  --tw-text-opacity: 1;
+  color: rgb(55 63 255 / var(--tw-text-opacity));
 }
 
 .product-card__title{
@@ -1354,14 +1340,6 @@ video {
   width: 80%;
   -o-object-fit: contain;
      object-fit: contain;
-}
-
-.product-card__content--with-gradient{
-  background-image: radial-gradient(rgb(222, 242, 251), rgb(235, 255, 250), white, white);
-}
-
-.product-card__chart-container--with-gradient{
-  background-image: radial-gradient(rgb(222, 242, 251), rgb(235, 255, 250), white, white);
 }
 
 /* PRICING.HTML */
@@ -1399,11 +1377,14 @@ video {
 /* HEADER */
 
 .header{
+  background-image: linear-gradient(to right, var(--tw-gradient-stops));
+  --tw-gradient-from: #ebfffa;
+  --tw-gradient-to: rgb(235 255 250 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
   padding-left: 4%;
   padding-right: 4%;
   padding-top: 5rem;
   padding-bottom: 2.5rem;
-  background-image: radial-gradient(rgb(222, 242, 251), rgb(235, 255, 250), white, white);
 }
 
 .header__content{
@@ -1471,7 +1452,6 @@ video {
   padding-left: 4%;
   padding-right: 4%;
   padding-bottom: 1rem;
-  background-image: radial-gradient(rgb(222, 242, 251), white, white, white, white, white, white, rgb(235, 255, 250));
 }
 
 .plans__card{

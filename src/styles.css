@@ -25,11 +25,11 @@
     @apply w-[70%];
 }
 
-.solutions{
+.solutions, .about-us{
     @apply px-[4%] flex flex-col items-center text-center gap-4;
 }
 
-.solutions__label{
+.solutions__label, .about-us__label, .planning__label{
     @apply text-2xl font-bold;
     background: linear-gradient(53.94deg, #373FFF 15.02%, #3ACAF8 82.83%);
     -webkit-background-clip: text;
@@ -38,11 +38,11 @@
     -webkit-text-fill-color: transparent;
 }
 
-.solutions__title{
+.solutions__title, .about-us__title, .planning__title{
     @apply font-bold;
 }
 
-.solutions__title--big{
+.solutions__title--big, .about-us__title--big, .planning__title--big{
     @apply text-5xl leading-[120%];
 }
 
@@ -413,82 +413,86 @@
     background-image: radial-gradient(rgb(222, 242, 251), white, white, white, white, white, white, rgb(235, 255, 250));
 }
 
-.price-card{
+.plans__card{
     @apply flex flex-col py-8 space-y-3 border border-gray-300 shadow-lg rounded-3xl;
 }
 
-.price-card--secondary{
+.plans__card--secondary{
     @apply border-2 border-violet-800 bg-gradient-to-t from-green-100 via-green-50 to-violet-50;
 }
 
-.price-card__header{
+.plans__card-header{
     @apply flex items-center px-8 py-4 gap-x-4;
 }
 
-.price-card__plan-name{
+.plans__card-name{
     @apply text-4xl font-bold;
 }
 
-.price-card__plan-description{
+.plans__card-description{
     @apply text-sm;
 }
 
-.price-card__divider{
+.plans__card-divider{
     @apply w-full h-0.5 bg-gray-100;
 }
 
-.price-card__list, .price-card__description, .price-card__price-tag, .price-card__btn-container{
+.plans__card-list, .plans__card-description, .plans__card-price-tag, .plans__card-btn-container{
     @apply  px-8;
 }
 
-.price-card__list{
+.plans__card-list{
     @apply py-4 space-y-6 font-semibold;
 }
 
-.price-card__list-item{
+.plans__card-list-item{
     @apply flex items-center gap-x-2;
 }
 
-.price-card__description{
+.plans__card-description{
     @apply text-sm text-center;
 }
 
-.price-card__price-tag{
+.plans__card-price-tag{
     @apply py-4 text-center;
 }
 
-.price-card__price{
+.plans__card-price{
     @apply text-4xl font-bold;
 }
 
-.price-card__period{
+.plans__card-period{
     @apply text-xs;
 }
 
-.price-card__btn-container{
+.plans__card-btn-container{
     @apply flex items-center justify-center py-4;
 }
 
-.price-card__btn{
+.plans__card-btn{
     @apply px-10 py-4 text-white bg-primary rounded-xl;
 }
 
 /* FAQs */
 
-.questions{
+.faq{
     @apply px-[4%] py-32;
 }
 
-.faq{
+.faq__container{
     @apply bg-[#F0F2FE] p-[3%] grid md:grid-cols-2 rounded-3xl;
 }
 
-.faq-card{
-    @apply px-8 py-8 bg-white rounded-3xl;
+.faq__list{
+    @apply space-y-4;
 }
 
-.faq-card__business, .faq-card__subscription, .faq-card__support, .faq-card__credit-card{
-    @apply flex items-center justify-between ;
+.faq__list-item{
+    @apply px-8 py-8 space-y-4 bg-white rounded-3xl;
+}
+
+.faq__question{
+    @apply flex items-center justify-between;
 }
 
 .faq__title{
@@ -503,11 +507,7 @@
     @apply text-base;
 }
 
-.faq__list{
-    @apply space-y-4;
-}
-
-.faq-card__subtitle{
+.faq__question{
     @apply leading-[140%] text-2xl font-bold;
 }
 
@@ -596,5 +596,20 @@
 
 .contact__label{
     @apply text-base;
+}
+
+/* ABOUT-US.HTML */
+
+.header__cards{
+    @apply grid grid-cols-3 px-32 py-[4%] gap-x-4;
+}
+
+
+.planning{
+    @apply bg-[#F0F2FE] p-[4%] grid grid-cols-1 md:grid-cols-2 gap-x-20 my-20;
+}
+
+.planning__description{
+    @apply text-base leading-[150%];
 }
 
